@@ -4,7 +4,7 @@ import * as fs from 'fs';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
-        vscode.commands.registerCommand('WaveViewer.start', () => {
+        vscode.commands.registerCommand('waveviewer.start', () => {
             const panel = vscode.window.createWebviewPanel(
                 'Wave Viewer', // viewType
                 "Wave Viewer", // 视图标题
