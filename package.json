@@ -1,0 +1,91 @@
+{
+  "name": "wave-viewer-1",
+  "description": "this is the vscode extension for verilog waredorm view based on typescript and d3.js.",
+  "version": "0.0.1",
+  "publisher": "maksyuki",
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:WaveViewer.start",
+    "onWebviewPanel:WaveViewer"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "WaveViewer.start",
+        "title": "Start Wave Viewer session",
+        "category": "Wave Viewer"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -w -p ./",
+    "init": "eslint --init",
+    "build": "rmdir /s/q dist && mkdir dist && set NODE_ENV=production && rollup -c",
+    "clean": "rmdir /s/q dist/ node_modules/",
+    "pretest": "npm run build",
+    "test": "set NODE_ENV=development && jest",
+    "coveralls": "set NODE_ENV=development && jest --coverage && type ./tests/coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksyuki/vscode-wave-viewer-1.git"
+  },
+  "keywords": [
+    "D3.js",
+    "hardware",
+    "wave",
+    "signal",
+    "RTL",
+    "viewer",
+    "GTKWave"
+  ],
+  "author": "maksyuki",
+  "contributors": [
+    "maksyuki"
+  ],
+  "license": "GPL-3.0 License",
+  "bugs": {
+    "url": "https://github.com/maksyuki/vscode-wave-viewer-1/issues"
+  },
+  "homepage": "https://github.com/maksyuki/vscode-wave-viewer-1#readme",
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.0",
+    "d3": "^6.5.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-flow": "^7.10.4",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.47.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.0",
+    "@typescript-eslint/parser": "^4.16.0",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.10.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.4.2",
+    "rollup": "^2.28.2",
+    "rollup-plugin-postcss": "^3.1.8",
+    "typescript": "^4.2.2"
+  },
+  "jest": {
+    "coverageDirectory": "<rootDir>/tests/coverage",
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

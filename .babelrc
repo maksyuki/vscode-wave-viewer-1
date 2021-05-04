@@ -1,0 +1,22 @@
+{
+  "ignore": [
+    "node_modules/**"
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "@babel/flow",
+        "@babel/env",
+      ]
+    },
+    "production": {
+      "presets": [
+        "@babel/flow", 
+        ["@babel/env", { "modules": false }]
+      ],
+      "plugins": [
+        "external-helpers"
+      ]
+    }
+  }
+}

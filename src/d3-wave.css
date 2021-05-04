@@ -1,0 +1,119 @@
+.d3-wave .value-line {
+    fill: none;
+    stroke: lime;
+    stroke-width: 1.5px;
+}
+
+.d3-wave .grid-line-x {
+    stroke: lightgrey;
+    opacity: 0.7;
+    stroke-dasharray: 5, 5;
+}
+
+.d3-wave .grid path {
+    stroke-width: 0;
+}
+
+.d3-wave .value-rect-invalid path {
+    fill: darkred;
+    stroke: red;
+}
+
+.d3-wave .value-rect-invalid rect {
+    fill: darkred;
+    stroke: red;
+}
+
+.d3-wave .value-rect-valid path {
+    fill: green;
+    stroke: lime;
+}
+
+.d3-wave .value-rect-valid text {
+    text-anchor: middle;
+    fill: white;
+}
+
+.d3-wave .value-rect-invalid text {
+    text-anchor: middle;
+    fill: white;
+}
+
+.d3-wave {
+    background-color: black;
+}
+
+.d3-wave .domain {
+    stroke: yellow;
+    stroke-width: 1.5px;
+    shape-rendering: crispEdges;
+    vector-effect: non-scaling-stroke;
+}
+
+.d3-wave .tick line {
+    stroke-width: 1.5px;
+    stroke: white;
+}
+
+.d3-wave .axis text {
+    shape-rendering: crispEdges;
+    fill: white;
+}
+
+
+.d3-wave .axis-y path {
+    shape-rendering: crispEdges;
+    fill: yellow;
+}
+
+.d3-wave .axis-y .highlight text {
+    fill: #ff751a;
+    font-weight: bold;
+}
+
+.d3-wave .scrollbar .mover {
+  fill: steelblue;
+  pointer-events: all;
+  cursor: ns-resize;
+  opacity: 1;
+}
+
+.d3-wave .scrollbar .subBar { 
+  fill: gray;
+  opacity: 0.5;
+}
+
+.d3-wave .vertical-help-line {
+    stroke: #fc3;
+    stroke-width: 2;
+}
+
+.d3-wave .labelcell.selected rect {
+    opacity: 50%;
+    fill: aqua;
+}
+
+.d3-wave .labelcell text {
+    cursor:grabbing;
+}
+
+.d3-wave .labelcell .expandable {
+    cursor:pointer;
+}
+
+.d3-wave.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background-color: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.d3-wave .axis .icons {
+    fill: white;
+}

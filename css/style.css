@@ -1,0 +1,9 @@
+.d3-wave {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 80%;
+    top: 80px;
+};
