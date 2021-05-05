@@ -38,10 +38,15 @@ npm run coveralls      # run coverage tests(optional)
 
 ## 4. Run
 ### 4.1 Run in browser
-```bash
-./run.sh
+If you have installed `python3+` and added it to the environment path, enter the following command:
+```python
+python -m http.server
 ```
-1. If you have installed `python` and added it to the environment path, then run this script will start a http server(http://0.0.0.0:8000) in current folder.
+If you have installed `python2+`, enter the following command:
+```python
+python -m SimpleHTTPServer
+```
+1.  This command will start a http server(http://0.0.0.0:8000) in current folder.
 2. Open this address in browser(http://127.0.0.1:8000) and click link on page to visit the `./examples/viewer.html` to run example.
 
 ### 4.2 Run in VSCode
