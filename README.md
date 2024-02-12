@@ -3,6 +3,7 @@
 ## 1. Introduction
 This is the VSCode extension for verilog waredorm view based on ts/js and d3.js.
 
+
 This extension renders signal dumps into specified svg.
 
 ## 2. Installation
