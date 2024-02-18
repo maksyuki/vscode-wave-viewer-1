@@ -5,7 +5,6 @@ This is the VSCode extension for verilog waredorm view based on ts/js and d3.js.
 
 This extension renders signal dumps into specified svg.
 
-
 ## 2. Installation
 ```bash
 git clone https://github.com/maksyuki/vscode-wave-viewer-1.git # clone this library
