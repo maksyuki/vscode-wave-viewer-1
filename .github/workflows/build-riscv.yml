@@ -1,7 +1,6 @@
 name: Build RISC-V GNU Toolchain
 
 on:
-  workflow_dispatch:
   push:
     branches: [ main, dev ]
 
