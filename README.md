@@ -1,6 +1,5 @@
 # vscode-wave-viewer-1
 
-
 ## 1. Introduction
 This is the VSCode extension for verilog waredorm view based on ts/js and d3.js.
 
